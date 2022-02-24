@@ -19,7 +19,7 @@ console.group('Triangulos')
     console.log('Los lados del triangulo miden: ' + ladoTriangulo1 + ' cm, ' + ladoTriangulo2 + ' cm, ' + baseTriangulo + ' cm.');
     console.log('La altura del triangulo es: ' + alturaTriangulo + ' cm.');
 
-    const perimetroTriangu3lo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
+    const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
     console.log('El perimetro del triangulo es: ' + perimetroTriangulo);
 
     const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
