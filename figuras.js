@@ -47,7 +47,7 @@ function triangulo (l1,l2,l3,alt) {
     console.log('El Area del triangulo es: ' + areaT + ' cm2.');
 }
 
-/*CODIGO DEL CIRCULO
+/* CODIGO DEL CIRCULO
 console.group('Circulo');
 
     //RADIO
@@ -90,4 +90,32 @@ function circulo (radioCirculo) {
     console.log('El radio del circulo es: ' + radioCirculo + ' cm.');
     console.log('El perimetro del circulo es: ' + perimetroCirculo + ' cm.');
     console.log('El Area del circulo es: ' + areaCirculo + ' cm2.');
+}
+
+function calcularCuadrado() {
+    const input = document.getElementById('inputCuadrado');
+    const value = input.value;
+
+    cuadrado(value);
+}
+
+function calcularTriangulo() {
+    const input1 = document.getElementById('inputLado1');
+    const input2 = document.getElementById('inputLado2');
+    const input3 = document.getElementById('inputLado3');
+    const inputAltura = document.getElementById('inputAltura');
+
+    const l1 = input1.value;
+    const l2 = input2.value;
+    const l3 = input3.value;
+    const lAlt = inputAltura.value;
+
+    triangulo(l1, l2, l3, lAlt);
+}
+
+function calcularCirculo() {
+    const vRadio = document.getElementById('inputRadio');
+    const radio = vRadio.value;
+
+    circulo(radio);
 }

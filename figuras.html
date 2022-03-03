@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figuras Geometricas  - Curso Basico JS</title>
+    <title>Figuras Geometricas - Curso Basico JS</title>
 </head>
 <body>
+    <header>
     <h1>Figuras Geometricas</h1>
+    <p>Este es el curso practico de JS.</p>
+
+    <section>
+        <h2>Calcula los datos del cuadrado.</h2>
+        <form>
+            <label for="inputCuadrado">Tamaño de los lados: </label>
+            <input id="inputCuadrado" type="number"/> 
+            <button type="button" onclick="calcularCuadrado()">Calcular</button>
+        </form>
+
+        <h2>Calcula los datos del triangulo.</h2>
+        <form>
+            <label for="inputLado1">Lado 1:</label>
+            <input id="inputLado1" type="number"/> 
+            <br>
+            <label for="inputLado2">Lado 2:</label>
+            <input id="inputLado2" type="number"/> 
+            <br>
+            <label for="inputLado3">Lado 3:</label>
+            <input id="inputLado3" type="number"/> 
+            <br>
+            <label for="inputAltura">Altura:</label>
+            <input id="inputAltura" type="number"/> 
+            <br>
+            <button type="button" onclick="calcularTriangulo()">Calcular</button>
+        </form>
+
+        <h2>Calcula los datos del Circulo.</h2>
+        <form>
+            <label for="inputRadio">Radio:</label>
+            <input id="inputRadio" type="number"/> 
+            <button type="button" onclick="calcularCirculo()">Calcular</button>
+        </form>
+    
+    </section>
+
+    </header>
     <script src="./figuras.js"></script>
 </body>
 </html>
