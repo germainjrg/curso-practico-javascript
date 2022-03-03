@@ -119,3 +119,28 @@ function calcularCirculo() {
 
     circulo(radio);
 }
+
+function isosceles (){
+    const l1 = (document.getElementById('lado1')).value
+    const l2 = (document.getElementById('lado2')).value
+    const l3 = (document.getElementById('lado3')).value
+
+    let alturaIsosceles = 0;
+    
+    if (l1 == l2) {
+        alturaIsosceles = Math.sqrt((l1**2) + ((l3 / 2)**2));
+    }
+    else if (l2 == l3) {
+        alturaIsosceles = Math.sqrt((l2**2) + ((l1 / 2)**2));
+    }
+    else if (l3 == l1){
+        alturaIsosceles = Math.sqrt((l3**2) + ((l2 / 2)**2));
+    }
+
+    if (alturaIsosceles) {
+        console.log('La altura del triangulo isosceles es: ' + alturaIsosceles + ' cm.');
+    }
+    else {
+        console.log('No es un triangulo isosceles.')
+    }
+}

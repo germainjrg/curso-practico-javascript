@@ -16,7 +16,7 @@
         <form>
             <label for="inputCuadrado">Tamaño de los lados: </label>
             <input id="inputCuadrado" type="number"/> 
-            <button type="button" onclick="calcularCuadrado()">Calcular</button>
+            <button id="botonCuadrado" type="button" onclick="calcularCuadrado()">Calcular</button>
         </form>
 
         <h2>Calcula los datos del triangulo.</h2>
@@ -33,14 +33,28 @@
             <label for="inputAltura">Altura:</label>
             <input id="inputAltura" type="number"/> 
             <br>
-            <button type="button" onclick="calcularTriangulo()">Calcular</button>
+            <button id='botonTriangulo' type="button" onclick="calcularTriangulo()">Calcular</button>
         </form>
 
         <h2>Calcula los datos del Circulo.</h2>
         <form>
             <label for="inputRadio">Radio:</label>
             <input id="inputRadio" type="number"/> 
-            <button type="button" onclick="calcularCirculo()">Calcular</button>
+            <button id='botonCirculo' type="button" onclick="calcularCirculo()">Calcular</button>
+        </form>
+
+        <h2>Calcula la altura del triangulo isosceles.</h2>
+        <form>
+            <label for="lado1">Lado 1:</label>
+            <input id="lado1" type="number"/> 
+            <br>
+            <label for="lado2">Lado 2:</label>
+            <input id="lado2" type="number"/> 
+            <br>
+            <label for="lado3">Lado 3:</label>
+            <input id="lado3" type="number"/> 
+            <br>
+            <button id='botonIsosceles' type="button" onclick="isosceles()">Calcular</button>
         </form>
     
     </section>
